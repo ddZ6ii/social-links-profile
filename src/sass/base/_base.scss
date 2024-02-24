@@ -1,0 +1,19 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+@use 'sass:list';
+@use '../abstracts/variables' as v;
+
+/**
+ * Set the rem ref relative to browser settings.
+ */
+html {
+  font-size: 1em;
+}
+
+body {
+  background-color: v.$color-neutral-900;
+  color: v.$color-neutral-50;
+  font: v.$font-regular list.slash(v.$font-body, 1.5) v.$font-sans;
+}

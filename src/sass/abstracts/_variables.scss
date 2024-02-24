@@ -27,11 +27,14 @@ $font-sans: 'Inter', sans-serif !default;
 $font-regular: 400 !default;
 $font-medium: 600 !default;
 $font-bold: 700 !default;
-$font-body-md: 0.875rem !default;
+$font-body: 0.875rem !default;
+$font-body-lg: 1rem !default;
+$font-heading: 2rem !default;
 
 /// Colors
 /// @type Color
 $color-primary: #c5f82a !default; // green
+$color-accent: #5d2af8 !default; // purple
 $color-neutral-50: white !default; // white
 $color-neutral-700: #333333 !default; // grey
 $color-neutral-800: #1f1f1f !default; // dark grey
@@ -44,26 +47,4 @@ $spacing-base: 4px !default;
 /// Border radius
 /// @type Length
 $border-radius-base: 8px !default;
-$border-radius-rounded: 9999px !default;
-
-/// Breakpoints
-/// Prefer using relative em unit instead of absolute px unit for media queries:
-///  em is the only unit that performs consistently across all browsers
-///  em is the only unit that allows to support users who change their browser’s font-size value
-///  Source: https://zellwk.com/blog/media-query-units/
-/// @type Length
-// $screen-xs: 0em !default;
-$screen-sm: 40em !default; // 640px
-// $screen-md: 56.5625em !default; // 905px
-// $screen-lg: 77.5em !default; // 1240px
-// $screen-xl: 90em !default; // 1440px
-
-/// @prop {String} keys - Screen size labels
-/// @prop {Map} values - Screen sizes in pixels
-$breakpoints: (
-  // 'xs': $screen-xs,
-  'sm': $screen-sm,
-  // 'md': $screen-md,
-  // 'lg': $screen-lg,
-  // 'xl': $screen-xl,
-) !default;
+$border-rounded: 9999px !default;

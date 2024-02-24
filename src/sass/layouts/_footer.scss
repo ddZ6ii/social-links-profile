@@ -1,0 +1,13 @@
+@use '../abstracts/variables' as v;
+
+.footer {
+  color: darken(v.$color-neutral-50, 20%);
+  text-align: center;
+
+  &__link {
+    color: darken(v.$color-primary, 10%);
+  }
+  &__icon {
+    color: lighten(v.$color-accent, 10%);
+  }
+}

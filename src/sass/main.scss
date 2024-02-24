@@ -7,5 +7,7 @@
 @charset 'utf-8';
 
 //When importing a folder without a specified file, Sass will search by default for the _index.scss within that folder
-// @use 'abstracts';
+@use 'abstracts';
 @use 'base';
+@use 'layouts';
+@use 'components';
