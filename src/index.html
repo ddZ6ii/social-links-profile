@@ -8,6 +8,10 @@
       name="description"
       content="This is a solution to the 'Social links profile' challenge on Frontend Mentor. The goal is to  build out this social links profile and get it looking as close to the design as possible. Users should be able to see hover and focus states for all interactive elements on the page."
     />
+    <meta
+      name="keywords"
+      content="frontendmentor, challenge, responsive layout, interactive elements"
+    />
     <link
       rel="icon"
       type="image/png"
@@ -18,17 +22,86 @@
 
     <title>Frontend Mentor | Social links profile</title>
   </head>
-  <body>
-    Jessica Randall London, United Kingdom "Front-end developer and avid
-    reader." GitHub Frontend Mentor LinkedIn Twitter Instagram
-
-    <footer>
-      <p>
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded with ❤️ by <a href="https://github.com/ddZ6ii">ddZ6ii</a>.
-      </p>
-    </footer>
+  <body class="grid">
+    <div class="container">
+      <article>
+        <div class="profile">
+          <img
+            src="assets/images/avatar-jessica.jpeg"
+            alt="user thumbnbail"
+            class="profile__thumbnail"
+            width="120"
+            height="120"
+          />
+          <div class="profile__heading">
+            <h2 class="profile__heading__name">Jessica Randall</h2>
+            <p class="profile__heading__location">London, United Kingdom</p>
+          </div>
+          <p class="profile__description">
+            "Front-end developer and avid reader."
+          </p>
+          <ul class="profile__socials">
+            <li class="profile__socials__item">
+              <a
+                href="https://github.com/"
+                target="_blank"
+                class="profile__socials__item__link"
+                >GitHub</a
+              >
+            </li>
+            <li class="profile__socials__item">
+              <a
+                href="https://www.frontendmentor.io/"
+                target="_blank"
+                class="profile__socials__item__link"
+                >Frontend Mentor</a
+              >
+            </li>
+            <li class="profile__socials__item">
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                class="profile__socials__item__link"
+                >LinkedIn</a
+              >
+            </li>
+            <li class="profile__socials__item">
+              <a
+                href="https://twitter.com/?lang=en"
+                target="_blank"
+                class="profile__socials__item__link"
+                >Twitter</a
+              >
+            </li>
+            <li class="profile__socials__item">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="profile__socials__item__link"
+                >Instagram</a
+              >
+            </li>
+          </ul>
+        </div>
+      </article>
+      <footer class="footer">
+        <p class="footer__content">
+          Challenge by
+          <a
+            href="https://www.frontendmentor.io?ref=challenge"
+            target="_blank"
+            class="footer__link"
+            >Frontend Mentor</a
+          >. <br />
+          Coded with <span class="footer__icon">❤️</span> by
+          <a
+            href="https://github.com/ddZ6ii"
+            target="_blank"
+            class="footer__link"
+            >ddZ6ii</a
+          >.
+        </p>
+      </footer>
+    </div>
   </body>
 </html>
