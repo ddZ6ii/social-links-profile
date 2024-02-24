@@ -1,0 +1,69 @@
+// -----------------------------------------------------------------------------
+// This file contains application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+@font-face {
+  font-family: 'Inter', sans-serif;
+  src: url('../assets/fonts/Inter-Regular.ttf') format(truetype);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Inter', sans-serif;
+  src: url('../assets/fonts/Inter-SemiBold.ttf') format(truetype);
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Inter', sans-serif;
+  src: url('../assets/fonts/Inter-Bold.ttf') format(truetype);
+  font-weight: 700;
+  font-style: normal;
+}
+
+/// Typography
+/// @type List
+$font-sans: 'Inter', sans-serif !default;
+$font-regular: 400 !default;
+$font-medium: 600 !default;
+$font-bold: 700 !default;
+$font-body-md: 0.875rem !default;
+
+/// Colors
+/// @type Color
+$color-primary: #c5f82a !default; // green
+$color-neutral-50: white !default; // white
+$color-neutral-700: #333333 !default; // grey
+$color-neutral-800: #1f1f1f !default; // dark grey
+$color-neutral-900: #141414 !default; // off black
+
+/// Spacing
+/// @type Length
+$spacing-base: 4px !default;
+
+/// Border radius
+/// @type Length
+$border-radius-base: 8px !default;
+$border-radius-rounded: 9999px !default;
+
+/// Breakpoints
+/// Prefer using relative em unit instead of absolute px unit for media queries:
+///  em is the only unit that performs consistently across all browsers
+///  em is the only unit that allows to support users who change their browser’s font-size value
+///  Source: https://zellwk.com/blog/media-query-units/
+/// @type Length
+// $screen-xs: 0em !default;
+$screen-sm: 40em !default; // 640px
+// $screen-md: 56.5625em !default; // 905px
+// $screen-lg: 77.5em !default; // 1240px
+// $screen-xl: 90em !default; // 1440px
+
+/// @prop {String} keys - Screen size labels
+/// @prop {Map} values - Screen sizes in pixels
+$breakpoints: (
+  // 'xs': $screen-xs,
+  'sm': $screen-sm,
+  // 'md': $screen-md,
+  // 'lg': $screen-lg,
+  // 'xl': $screen-xl,
+) !default;
