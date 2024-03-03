@@ -32,13 +32,33 @@
               <h1 class="profile__name">Jessica Randall</h1>
               <p class="profile__location">London, United Kingdom</p>
             </div>
-            <img
-              src="assets/images/avatar-jessica.jpeg"
-              alt=""
-              class="profile__thumbnail"
-              width="120"
-              height="120"
-            />
+            <picture>
+              <!-- Provide modern webp format if supported by the browser -->
+              <source
+                type="image/webp"
+                srcset="
+                  ./assets/images/avatar-jessica-120.webp 1x,
+                  ./assets/images/avatar-jessica-180.webp 1.5x,
+                  ./assets/images/avatar-jessica-240.webp 2x,
+                  ./assets/images/avatar-jessica-360.webp 3x
+                "
+              />
+              <!-- Use jpeg as a fallback -->
+              <img
+                srcset="
+                  ./assets/images/avatar-jessica-120.jpg 1x,
+                  ./assets/images/avatar-jessica-180.jpg 1.5x,
+                  ./assets/images/avatar-jessica-240.jpg 2x,
+                  ./assets/images/avatar-jessica-360.jpg 3x
+                "
+                src="assets/images/avatar-jessica-120.jpg"
+                alt=""
+                width="120"
+                height="120"
+                class="profile__thumbnail"
+              />
+            </picture>
+
             <p class="profile__description">
               "Front-end developer and avid reader."
             </p>
