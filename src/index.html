@@ -22,81 +22,84 @@
 
     <title>Frontend Mentor | Social links profile</title>
   </head>
-  <body class="grid">
-    <div class="container">
-      <article>
-        <div class="profile">
-          <img
-            src="assets/images/avatar-jessica.jpeg"
-            alt="user thumbnbail"
-            class="profile__thumbnail"
-            width="120"
-            height="120"
-          />
-          <div class="profile__heading">
-            <h2 class="profile__heading__name">Jessica Randall</h2>
-            <p class="profile__heading__location">London, United Kingdom</p>
-          </div>
-          <p class="profile__description">
-            "Front-end developer and avid reader."
-          </p>
+  <body>
+    <div class="wrapper">
+      <main>
+        <section class="profile container">
+          <header class="profile__header">
+            <!-- Headings should always come first for screen reader! Use CSS to change the order to match the design -->
+            <div class="profile__heading">
+              <h1 class="profile__name">Jessica Randall</h1>
+              <p class="profile__location">London, United Kingdom</p>
+            </div>
+            <img
+              src="assets/images/avatar-jessica.jpeg"
+              alt=""
+              class="profile__thumbnail"
+              width="120"
+              height="120"
+            />
+            <p class="profile__description">
+              "Front-end developer and avid reader."
+            </p>
+          </header>
           <ul class="profile__socials">
-            <li class="profile__socials__item">
+            <li class="profile__social">
               <a
                 href="https://github.com/"
-                target="_blank"
-                class="profile__socials__item__link"
+                title="Visit profile"
+                class="profile__link"
                 >GitHub</a
               >
             </li>
-            <li class="profile__socials__item">
+            <li class="profile__social">
               <a
                 href="https://www.frontendmentor.io/"
-                target="_blank"
-                class="profile__socials__item__link"
+                title="Visit profile"
+                class="profile__link"
                 >Frontend Mentor</a
               >
             </li>
-            <li class="profile__socials__item">
+            <li class="profile__social">
               <a
                 href="https://www.linkedin.com/"
-                target="_blank"
-                class="profile__socials__item__link"
+                title="Visit profile"
+                class="profile__link"
                 >LinkedIn</a
               >
             </li>
-            <li class="profile__socials__item">
+            <li class="profile__social">
               <a
                 href="https://twitter.com/?lang=en"
-                target="_blank"
-                class="profile__socials__item__link"
+                title="Visit profile"
+                class="profile__link"
                 >Twitter</a
               >
             </li>
-            <li class="profile__socials__item">
+            <li class="profile__social">
               <a
                 href="https://www.instagram.com/"
-                target="_blank"
-                class="profile__socials__item__link"
+                title="Visit profile"
+                class="profile__link"
                 >Instagram</a
               >
             </li>
           </ul>
-        </div>
-      </article>
-      <footer class="footer">
+        </section>
+      </main>
+      <footer class="footer container">
         <p class="footer__content">
           Challenge by
           <a
             href="https://www.frontendmentor.io?ref=challenge"
-            target="_blank"
+            title="Visit the website"
             class="footer__link"
             >Frontend Mentor</a
           >. <br />
-          Coded with <span class="footer__icon">❤️</span> by
+          Coded with <span class="footer__icon">❤</span> by
           <a
             href="https://github.com/ddZ6ii"
-            target="_blank"
+            title="Visit Github profile"
             class="footer__link"
             >ddZ6ii</a
           >.

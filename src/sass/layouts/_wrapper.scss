@@ -1,0 +1,10 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+.wrapper {
+  $gap: calc(4 * v.$spacing-base);
+
+  min-height: 100dvh;
+  @include m.grid($gap);
+  align-content: center;
+}

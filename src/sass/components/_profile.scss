@@ -1,3 +1,4 @@
+@use 'sass:color';
 @use '../abstracts/variables' as v;
 @use '../abstracts/mixins' as m;
 
@@ -12,53 +13,59 @@
   border-radius: v.$border-radius-base;
   text-align: center;
 
-  &__thumbnail {
-    width: min(100%, 120px);
-    height: auto;
-    border-radius: v.$border-rounded;
+  &__header {
+    @include m.grid($gap-lg);
   }
-
   &__heading {
     @include m.flex-center(column, $gap-sm);
-
-    &__name {
-      font-size: v.$font-heading;
-      font-weight: v.$font-bold;
-    }
-    &__location {
-      color: darken(v.$color-primary, 10%);
-      font-size: v.$font-body-lg;
-      font-weight: v.$font-medium;
-    }
   }
-
+  &__name {
+    font-size: v.$font-heading;
+    font-weight: v.$font-bold;
+  }
+  &__location {
+    color: darken(v.$color-primary, 10%);
+    font-size: v.$font-body-lg;
+    font-weight: v.$font-medium;
+  }
+  &__thumbnail {
+    order: -1;
+    margin-inline: auto;
+    width: min(100%, 120px);
+    aspect-ratio: 1 / 1;
+    border-radius: v.$border-rounded;
+  }
   &__description {
     color: darken(v.$color-neutral-50, 10%);
   }
-
   &__socials {
     width: 100%;
     @include m.flex-center(column, $gap-md);
-    &__item {
-      width: 100%;
-      font-weight: v.$font-medium;
-      cursor: pointer;
-      transition: 0.3s ease-in-out;
-
-      &__link {
-        $padding: v.$spacing-base * 4;
-        padding: $padding;
-        width: 100%;
-        background-color: v.$color-neutral-700;
-        border-radius: v.$border-radius-base;
-        &:hover {
-          background-color: v.$color-primary;
-          color: v.$color-neutral-800;
-        }
-        &:focus {
-          outline: 1px solid v.$color-neutral-50;
-        }
-      }
+  }
+  &__social {
+    width: 100%;
+    font-weight: v.$font-medium;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  &__link {
+    $padding: v.$spacing-base * 4;
+    padding: $padding;
+    width: 100%;
+    background-color: v.$color-neutral-700;
+    border-radius: v.$border-radius-base;
+    transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:visited {
+      background-color: darken(v.$color-neutral-700, 5%);
+      color: darken(white, 20%);
+    }
+    &:hover,
+    &:focus-visible {
+      background-color: v.$color-primary;
+      color: v.$color-neutral-800;
+    }
+    &:active {
+      background-color: lighten(v.$color-accent, 20%);
     }
   }
 }

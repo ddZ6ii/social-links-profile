@@ -20,3 +20,9 @@
   align-items: center;
   justify-content: center;
 }
+
+/// @param {Length} $_gap [0] - grid gap
+@mixin grid($_gap: 0) {
+  display: grid;
+  gap: $_gap;
+}

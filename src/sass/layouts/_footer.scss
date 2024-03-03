@@ -5,7 +5,27 @@
   text-align: center;
 
   &__link {
-    color: darken(v.$color-primary, 10%);
+    &,
+    &:link {
+      color: darken(v.$color-primary, 20%);
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+    &:visited {
+      color: lighten(v.$color-accent, 20%);
+      text-decoration: none;
+    }
+    &:focus-visible {
+      color: v.$color-primary;
+      text-decoration: none;
+      outline-offset: 1px;
+    }
+    &:hover {
+      color: v.$color-primary;
+    }
+    &:active {
+      color: tomato;
+    }
   }
   &__icon {
     color: lighten(v.$color-accent, 10%);
